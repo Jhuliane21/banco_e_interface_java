@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="460.0" prefWidth="937.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TabelaPaciente">
+   <children>
+      <TableView fx:id="tabela" layoutX="14.0" layoutY="60.0" prefHeight="340.0" prefWidth="898.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="60.0">
+        <columns>
+          <TableColumn fx:id="tbNome" prefWidth="120.0" text="Nome" />
+          <TableColumn fx:id="tbcpf" prefWidth="135.0" text="CPF" />
+            <TableColumn fx:id="tbentrada" prefWidth="100.0" text="Data Entrada" />
+            <TableColumn fx:id="tbalta" prefWidth="100.0" text="Data Alta" />
+            <TableColumn fx:id="tbconvenio" text="Convênio" />
+            <TableColumn fx:id="tbclinico" prefWidth="119.0" text="Estado Clínico" />
+            <TableColumn fx:id="tbCrm" prefWidth="133.0" text="CRM" />
+            <TableColumn fx:id="tbCid" prefWidth="115.0" text="CID" />
+        </columns>
+      </TableView>
+      <MenuBar layoutX="14.0" layoutY="22.0" prefHeight="25.0" prefWidth="213.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Pacientes">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#addPac" text="Adicionar" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#updatePac" text="Editar" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#deletePac" text="Excluir" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Médicos">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#addMed" text="Adicionar" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#updateMed" text="Editar" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#deleteMed" text="Excluir" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Doenças">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#addDoenca" text="Adicionar" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" onAction="#updateDoenca" text="Editar" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#deleteDoenca" text="Excluir" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

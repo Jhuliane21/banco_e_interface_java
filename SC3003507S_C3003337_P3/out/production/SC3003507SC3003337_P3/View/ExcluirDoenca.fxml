@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="245.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ExcluirDoenca">
+   <children>
+      <Text fill="#6f5438" layoutX="99.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exclusão de Doença:" wrappingWidth="240.66796875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Label layoutX="14.0" layoutY="118.0" prefHeight="17.0" prefWidth="39.0" text="CID:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCid" layoutX="71.0" layoutY="119.0" prefHeight="25.0" prefWidth="241.0" />
+      <Button fx:id="delete" layoutX="312.0" layoutY="176.0" mnemonicParsing="false" onAction="#delete" prefHeight="51.0" prefWidth="75.0" text="Excluir" textFill="#43321f">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
